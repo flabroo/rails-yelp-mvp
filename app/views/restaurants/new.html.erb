@@ -3,6 +3,6 @@
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
-  <%= f.input :category %>
-  <%= f.submit %>
+  <%= f.input :category, collection: Restaurant::CATEGORY %>
+  <%= f.button :submit, class: ["btn", "btn-warning"] %>
 <% end %>

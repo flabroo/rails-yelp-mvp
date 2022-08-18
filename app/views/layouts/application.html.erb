@@ -12,9 +12,9 @@
   </head>
 
   <body>
-    <div class="navbar bg-dark d-flex px-3">
-      <h1 class="text-light">Restaurants</h1>
-      <p><%= link_to "New restaurant", new_restaurant_path, class: ["btn", "btn-light"] %></p>
+    <div class="navbar bg-dark align-items-center px-3">
+      <h1 class="text-light"><%= link_to "Restaurants", restaurants_path, class: ["text-decoration-none", "text-reset"] %></h1>
+      <%= link_to "New restaurant", new_restaurant_path, class: ["btn", "btn-light"] %>
     </div>
     <div class="container py-3">
       <%= yield %>
